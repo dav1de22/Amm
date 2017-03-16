@@ -12,17 +12,33 @@ Questa pagina contiene il form per effettuare il login
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>
-            <h1>Benvenuto su NERDBOOK</h1>
-            <h2>Inserire l'username e la password per effettuare il login</h2>
-            <p>
-                Username
-            </p>
-            
-            <p>
-                Password
-            </p>
+        <header>
+            <div id="title">
+                <h1>
+                    <a id='Segnalibro0'>
+                         Benvenuto su Nerdbook! Effettua il login ora!
+                    </a>
+                </h1>
+            </div>
+        </header>
+       <div id="login">
+	<h1>Login</h1>
+            <form method="post">
+            	<input type="text" name="u" placeholder="Username" required="required" />
+                <input type="password" name="p" placeholder="Password" required="required" />
+                <button type="submit">Effettua il login.</button>
+           </form>
         </div>
-        
+         <nav>
+            
+            <h2>Collegamenti rapidi</h2>
+            <ol>
+                <li><a href="login.html">Effettua il login</a></li>
+                <li><a href="bacheca.html">Bacheca</a></li>
+                <li><a href="profilo.html">Profilo</a></li>
+                <li><a href="descrizione.html">Storia e descrizione di Nerdbook</a></li>
+                <li><a href="#Segnalibro0">Ritorna in cima</a></li>
+            </ol>
+        </nav>
     </body>
 </html>
