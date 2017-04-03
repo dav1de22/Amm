@@ -61,7 +61,9 @@ a:hover{
     border-color: lightblue;
 }
 
-.post {
+.post{
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
     margin-bottom: 5px;
     border-style: solid;
@@ -71,14 +73,24 @@ a:hover{
     width: 500px;
 }
 
-#divBody{
-    padding-top: 100px;
+.textb {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-color:#FF552F;
+    background-color: white;
+    border-radius: 5px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+#divBody{
+    padding-top:60px;
+}
 
 header{
     position: fixed;
-    height: auto;
+    height: 50px;
     width: auto;
     top:0;
     left: 0;
@@ -86,6 +98,16 @@ header{
     box-shadow: -5px -5px 5px #474f87;
 }
 
+#title{
+    float: left;
+    padding-right: 10px;
+    box-shadow: 0px 0px 20px #8CCCCC;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #8CCCCC;
+    background-color: #8CCCCC;
+    border-radius: 10px;
+}
 footer{
     
     position: static;
@@ -118,6 +140,10 @@ nav li{
     padding-right: 20px;
     border-right: 3px dotted white;
 }
+
+nav li:last-child{
+    border-right: 3px solid white;
+}
  .prpic {
     width: 120px;
     height: 120px;
@@ -126,4 +152,43 @@ nav li{
     border-style: solid;
     border-radius: 5px;
     border-color: #8CCCCC;
+}
+
+#profilo{
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #8CCCCC;
+    width: 600px;
+}
+
+aside{
+    position: fixed;
+    top:100px;
+    left: 0px;
+    padding: 5px;
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:  #8CCCCC;
+    background-color: white;
+    
+    
+}
+#sommario ol{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    padding-left:0;
+}
+
+#sommario ul{
+    padding-left:6px;
+    text-justify: distribute;
+    
+  
 }
