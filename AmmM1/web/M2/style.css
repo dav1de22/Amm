@@ -5,22 +5,36 @@
 */
 
 body{
-    background-color: #8CCCCC;
+    background-color: whitesmoke;
     font: 17px "Lucida Bright", Lucida, serif;
-    color:#e6ffff;
+    color: dodgerblue;
+    display:block;
 }
 
 h1{
     margin-top: 10px;
-    color: #ffffff;
+    color: #FF552F;
     font: 40px "Lucida Bright", Lucida, serif;
     font-weight: bold;
 }
 
+h2{
+    margin-top: 10px;
+    color: #FF552F;
+    font: 30px "Lucida Bright", Lucida, serif;
+    font-weight: bold;
+}
+
+h3{
+    margin-top: 10px;
+    color: #FF552F;
+    font: 23px "Lucida Bright", Lucida, serif;
+    font-weight: bold;
+}
 a:link{
     font-size: 20px;
     text-decoration: none;
-    color: #006666;
+    color: #474f87;
     font-weight: bold;
     text-shadow: 1px 1px #b3ffff;
 }
@@ -28,11 +42,88 @@ a:link{
 a:visited{
     font-size: 20px;
     text-decoration: none;
-    color: #006666;
+    color: #474f87;
     font-weight: bold;
     text-shadow: 1px 1px #b3ffff;
 }
 
 a:hover{
-    font-weight: lighter;
+    font-weight:lighter;
+}
+
+.pname {
+    color: #474f87;
+}
+
+.pcontent {
+    font-style:italic;
+    border-style:dotted;
+    border-color: lightblue;
+}
+
+.post {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-color:#FF552F;
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+}
+
+#divBody{
+    padding-top: 100px;
+}
+
+
+header{
+    position: fixed;
+    height: auto;
+    width: auto;
+    top:0;
+    left: 0;
+    margin: 5px;
+    box-shadow: -5px -5px 5px #474f87;
+}
+
+footer{
+    
+    position: static;
+    bottom: 0;
+    height: 100px;
+    width: auto;
+    display: block;
+    text-align: center;
+    
+    box-shadow: 5px 5px 5px #474f87;
+}
+
+header, footer{
+    background-color: #8CCCCC;
+    color: white;
+    text-shadow: 1px 1px black;
+    left: 0;
+    right: 0;
+}
+
+
+
+nav ol, nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 3px dotted white;
+}
+ .prpic {
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #8CCCCC;
 }
