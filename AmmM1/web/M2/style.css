@@ -18,11 +18,25 @@ h1{
     font-weight: bold;
 }
 
+#loginPage h1{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+    
+}
 h2{
     margin-top: 10px;
     color: #FF552F;
     font: 30px "Lucida Bright", Lucida, serif;
     font-weight: bold;
+}
+
+#loginPage h2{
+    color: #474f87;
+    font: 20px "Lucida Bright", Lucida, serif;
+    font-weight: bold;
+    text-align: center;
 }
 
 h3{
@@ -53,13 +67,72 @@ a:hover{
 
 .pname {
     color: #474f87;
+    background-size: 20px;
+    background-image: url(img/profile.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 20px;
+    vertical-align: middle;
+    display: block;
+    padding-left: 22px;
 }
 
 .pcontent {
     font-style:italic;
     border-style:dotted;
     border-color: lightblue;
+    background-size: 20px;
+    background-image: url(img/pencil.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: auto;
+    vertical-align: middle;
+    display: block;
+    padding-left: 22px;
 }
+
+.inpForm{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-top: 100px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color:#FF552F;
+    background-color: white;
+    width: 400px;
+}
+
+#username, #password{
+    display: block;
+    box-shadow: 2px 2px 5px #474f87;
+    border-bottom-color: #8CCCCC;
+    border-style: solid;
+    border-radius: 5px;
+    border-bottom: none;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+
+#passwordBox, #usernameBox {
+    border-color: #FF552F;
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 8px;
+    text-align: center;
+}
+.profileBox{
+    border-color: #FF552F;
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+#login{
+    text-align: center;   
+}
+
 
 .post{
     margin-left: auto;
@@ -71,6 +144,21 @@ a:hover{
     background-color: white;
     border-radius: 5px;
     width: 500px;
+}
+
+.post img{
+    margin-left: 22px;
+}
+
+.postImg img{
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+    border-color:black;;
+    border-radius: 5px;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
 }
 
 .textb {
@@ -86,6 +174,7 @@ a:hover{
 }
 #divBody{
     padding-top:60px;
+    padding-bottom: 60px;
 }
 
 header{
@@ -110,13 +199,14 @@ header{
 }
 footer{
     
-    position: static;
-    bottom: 0;
-    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
     width: auto;
     display: block;
     text-align: center;
-    
+    padding: 5px;
+    margin: 5px;
     box-shadow: 5px 5px 5px #474f87;
 }
 
@@ -155,15 +245,32 @@ nav li:last-child{
 }
 
 #profilo{
-    
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
     border-radius: 5px;
     border-color: #8CCCCC;
     width: 600px;
+    padding-top: 30px;
 }
 
+#profilo textArea:focus, #profilo input:focus{
+    border-color: #8CCCCC;
+    box-shadow: 0 0 10px #8CCCCC;
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 8px;
+    
+}
+
+#login input:focus{
+    border-color: #8CCCCC;
+    box-shadow: 0 0 10px #8CCCCC;
+    border-style:solid;
+    border-width: 2px;
+    border-radius: 8px;
+}
 aside{
     position: fixed;
     top:100px;
@@ -189,6 +296,4 @@ aside{
 #sommario ul{
     padding-left:6px;
     text-justify: distribute;
-    
-  
 }

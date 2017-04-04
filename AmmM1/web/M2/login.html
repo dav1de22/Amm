@@ -16,34 +16,37 @@ Questa pagina contiene il form per effettuare il login
         <header>
             <div id="header">
                 <div id="title">
-                    <h1>
-                             Nerdbook
-                    </h1>
-            </div>
-            </div>
+                    <h1> Nerdbook</h1>
+                </div>
+            <nav>
+               <ol>
+                   <li><a href="descrizione.html">What's Nerdbook?</a></li>
+                   <li><a href="profilo.html">Profilo</a></li>
+                   <li><a href="bacheca.html">Bacheca</a></li>
+               </ol>
+           </nav>
+           </div>
         </header>
         <div id="divBody">
-            <div id="login">
-             <h1>Login</h1>
-                 <form method="post">
-                     <input type="text" name="u" placeholder="Username" required="required" />
-                     <input type="password" name="p" placeholder="Password" required="required" />
-                     <button type="submit">Effettua il login.</button>
+            
+            <div id="loginPage" class="inpForm">
+             <h1>BENVENUTO!</h1>
+                 <form method="post" id="login">
+                    <div id='username'>
+                        <h2>Inserisci l'username</h2>
+                        <input id='usernameBox' type="text" name="u" placeholder="Username" required="required" />
+                    </div>
+                    <div id='password'>
+                        <h2>Inserisci la password</h2>
+                        <input id='passwordBox' type="password" name="p" placeholder="Password" required="required" />
+                    </div>
+                    <button type="submit">Effettua il login.</button>
                 </form>
             </div>
         </div>
         <footer>
             <div id ="footer">
-            <nav>
-
-               <h2>Collegamenti rapidi</h2>
-               <ol>
-                   <li><a href="descrizione.html">Storia e descrizione di Nerdbook</a></li>
-                   <li><a href="profilo.html">Profilo</a></li>
-                   <li><a href="bacheca.html">Bacheca</a></li>
-                   <li><a href="#title">Ritorna in cima</a></li>
-               </ol>
-           </nav>
+           
             </div>
         </footer>
     </body>
