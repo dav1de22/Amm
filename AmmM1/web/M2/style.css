@@ -25,6 +25,7 @@ h1{
     text-align: center;
     
 }
+
 h2{
     margin-top: 10px;
     color: #FF552F;
@@ -45,6 +46,7 @@ h3{
     font: 23px "Lucida Bright", Lucida, serif;
     font-weight: bold;
 }
+
 a:link{
     font-size: 20px;
     text-decoration: none;
@@ -62,7 +64,7 @@ a:visited{
 }
 
 a:hover{
-    font-weight:lighter;
+    font-weight: bold;
 }
 
 .pname {
@@ -103,6 +105,23 @@ a:hover{
     width: 400px;
 }
 
+form{
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+#intro{
+    background-size: 70px;
+    background-image: url(img/Superman.svg.png);
+    background-repeat: no-repeat;
+    background-position: top right; 
+    font-size: 30px;
+    padding:30px;
+    margin: 15px;
+    text-justify: auto;
+    color:#FF552F;
+}
+
 #username, #password{
     display: block;
     box-shadow: 2px 2px 5px #474f87;
@@ -122,6 +141,7 @@ a:hover{
     border-radius: 8px;
     text-align: center;
 }
+
 .profileBox{
     border-color: #FF552F;
     border-style:solid;
@@ -132,7 +152,6 @@ a:hover{
 #login{
     text-align: center;   
 }
-
 
 .post{
     margin-left: auto;
@@ -168,14 +187,17 @@ a:hover{
     border-color:#FF552F;
     background-color: white;
     border-radius: 5px;
-    width: 600px;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
+
 #divBody{
     padding-top:60px;
     padding-bottom: 60px;
 }
+
+
 
 header{
     position: fixed;
@@ -197,6 +219,7 @@ header{
     background-color: #8CCCCC;
     border-radius: 10px;
 }
+
 footer{
     
     position: fixed;
@@ -218,8 +241,6 @@ header, footer{
     right: 0;
 }
 
-
-
 nav ol, nav li{
     list-style-type: none;
     display: inline-block;
@@ -234,6 +255,7 @@ nav li{
 nav li:last-child{
     border-right: 3px solid white;
 }
+
  .prpic {
     width: 120px;
     height: 120px;
@@ -244,7 +266,14 @@ nav li:last-child{
     border-color: #8CCCCC;
 }
 
+
+form p{
+    text-align: left;
+    width: 200px;
+    
+}
 #profilo{
+    text-align: left;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -252,8 +281,11 @@ nav li:last-child{
     border-radius: 5px;
     border-color: #8CCCCC;
     width: 600px;
-    padding-top: 30px;
+    padding-top: 25px;
+    height: auto;
+    padding-bottom: 50px;
 }
+
 
 #profilo textArea:focus, #profilo input:focus{
     border-color: #8CCCCC;
@@ -261,6 +293,12 @@ nav li:last-child{
     border-style:solid;
     border-width: 2px;
     border-radius: 8px;
+    
+}
+.profileBox{
+    width: 200px;
+    padding:25px;
+    margin:25px;
     
 }
 
@@ -271,6 +309,9 @@ nav li:last-child{
     border-width: 2px;
     border-radius: 8px;
 }
+
+
+
 aside{
     position: fixed;
     top:100px;
@@ -284,9 +325,10 @@ aside{
     border-radius: 5px;
     border-color:  #8CCCCC;
     background-color: white;
-    
-    
+    height: auto;
 }
+
+
 #sommario ol{
     list-style-type: upper-roman;
     list-style-position: inside;
@@ -296,4 +338,147 @@ aside{
 #sommario ul{
     padding-left:6px;
     text-justify: distribute;
+}
+
+@media only screen and (max-width: 1024px){
+    
+    .post,.textb,.inpForm, #profilo{
+        margin-right: 0px;
+        width: 70%;
+        margin-top: 50px;
+        
+    }
+    #profilo{
+        width: 67%;
+}
+
+    a:hover{
+    color: #FF552F;
+}
+    nav{
+    position: fixed;
+    top:100px;
+    left: 0px;
+    padding: 5px;
+    width: 110px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:  #8CCCCC;
+    background-color: white;
+    height: auto;
+    }
+    #sommario{
+        display: none;
+    }
+    nav ol, nav li{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    header{
+    position: fixed;
+    height: 50px;
+    width: auto;
+    top:0;
+    left: 0;
+    margin: 5px;
+    box-shadow: -5px -5px 5px #474f87;
+}
+#title h1{
+    font-size: 25px;
+}
+
+#title{
+    font-size:15px;
+    width: 110px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 20px #8CCCCC;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #8CCCCC;
+    background-color: #8CCCCC;
+    border-radius: 10px;
+}
+
+#intro{
+    background: none;
+}
+footer{
+    display: none;
+}
+}
+
+@media only screen and (max-width:480px){
+
+    
+    nav{
+        position: static;
+        top: 52px;
+        display:block;
+        border: none;
+        margin: 0;
+        padding: 0;
+        width:  100%;
+        
+    }
+
+    nav ol, nav li{
+        text-align: center;
+        width: 100%;
+        background-color: #8CCCCC;
+        border:none;
+        margin: 0;
+        padding: 0;
+        margin: 0px;
+    }
+    nav li{
+         border-bottom: 3px dotted #FF552F;  
+    }
+    
+    nav li:last-child{
+    border-bottom: 3px solid black;
+}
+     .post,.textb,.inpForm, #profilo{
+        margin-right: 1%;
+        width: 99%;
+        margin-top: 52px;
+        border: none;  
+    }
+    body{
+        background: white;
+    }
+    
+    #header{
+        text-align: center;
+    position: static;
+    height: 50px;
+    width: auto;
+    top:0;
+    left: 0;
+    margin: 0px;
+    
+}
+
+#title h1{
+    font-size: 25px;
+}
+
+#title{
+    font-size:15px;
+    width: 99%;    
+    border-style: solid;
+    border-width: 5px;
+    border-color: #8CCCCC;
+    background-color: #8CCCCC;
+    box-shadow: none;
+    border-radius: 0px;
+}
+header{
+    box-shadow: none;
+    margin: 0;
+    
+}
 }
