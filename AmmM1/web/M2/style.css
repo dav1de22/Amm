@@ -3,9 +3,11 @@
     Created on : Mar 27, 2017, 12:18:36 PM
     Author     : Davide
 */
-
+/*
+Regole css generali per tutte le pagine
+*/
 body{
-    background-color: whitesmoke;
+    background-color: lightblue;
     font: 17px "Lucida Bright", Lucida, serif;
     color: dodgerblue;
     display:block;
@@ -31,6 +33,11 @@ h2{
     color: #FF552F;
     font: 30px "Lucida Bright", Lucida, serif;
     font-weight: bold;
+}
+
+#divBody{
+    padding-top:100px;
+    padding-bottom: 60px;
 }
 
 #loginPage h2{
@@ -67,6 +74,191 @@ a:hover{
     font-weight: bold;
 }
 
+/*
+Regole per il menu di navigazione, il sommario,l'Header e footer e le colonne
+*/
+
+aside{
+    
+    padding: 5px;
+    width: 190px;
+    padding-bottom: 100px; 
+    margin-bottom: 100px;
+    margin-left: 5px;
+    background-color: white;
+    height: auto;
+}
+
+#sommario ol{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    padding-left:0;
+}
+
+#sommario ul{
+    padding-left:6px;
+    text-justify: distribute;
+}
+
+header{
+    position: fixed;
+    height: 50px;
+    width: auto;
+    top:0;
+    left: 0;
+    margin: 5px;
+    box-shadow: -5px -5px 5px #474f87;
+}
+
+#title{
+    float: left;
+    padding-right: 10px;
+    box-shadow: 0px 0px 20px #8CCCCC;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #8CCCCC;
+    background-color: #8CCCCC;
+    border-radius: 10px;
+}
+
+
+#sidebar1 li, #sidebar2 li {
+    list-style: none;
+}
+
+#navTitle{
+    display: none;
+}
+
+#sidebar2 ol {
+    padding-left: 20px;
+}
+
+#sidebar1 ul, #sidebar2 ul{
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#sidebar1 {
+/*    position: fixed;
+    top:100px;
+    left: 0px;*/
+    padding: 5px;
+    width: 200px;
+    padding-bottom: 15px; 
+    margin-bottom: 20px;
+    margin-left: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:  #8CCCCC;
+    background-color: white;
+    height: auto;
+    float: left;
+    width: 20%;
+    padding-left: 5px;
+    margin-top: 100px
+    }
+    
+#people li{
+    background-size: 20px;
+    background-image: url(img/profile.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 22px;
+    }
+    
+#groups li{
+        background-size: 20px;
+    background-image: url(img/videogame.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 22px;
+    }
+    
+#sidebar2 {
+    padding: 5px;
+    width: 200px;
+    padding-bottom: 15px; 
+    margin-bottom: 25px;
+    margin-left: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:  #8CCCCC;
+    background-color: white;
+    height: auto;   
+    float: right;
+    width: 20%;
+    padding-right: 10px;
+    margin-top: 100px;
+    }
+
+footer{
+    
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: auto;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 5px 5px 5px #474f87;
+}
+
+header, footer{
+    background-color: #8CCCCC;
+    color: white;
+    text-shadow: 1px 1px black;
+    left: 0;
+    right: 0;
+}
+
+nav ol, nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 3px dotted white;
+}
+
+nav li:last-child{
+    border-right: 3px solid white;
+}
+
+/*
+Regole per i contenuti della bacheca
+*/
+.post{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-color:#FF552F;
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.post img{
+    margin-left: 22px;
+}
+
+.postImg img{
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+    border-color:black;;
+    border-radius: 5px;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+}
+
 .pname {
     color: #474f87;
     background-size: 20px;
@@ -97,14 +289,16 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
-    margin-top: 100px;
+    margin-top: 0px;
     border-radius: 5px;
     border-style: solid;
     border-color:#FF552F;
     background-color: white;
     width: 400px;
 }
-
+/*
+Regole per i vari form contenenti input
+*/
 form{
     padding-top: 15px;
     padding-right: 10px;
@@ -153,33 +347,6 @@ form{
     text-align: center;   
 }
 
-.post{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    margin-bottom: 5px;
-    border-style: solid;
-    border-color:#FF552F;
-    background-color: white;
-    border-radius: 5px;
-    width: 500px;
-}
-
-.post img{
-    margin-left: 22px;
-}
-
-.postImg img{
-    margin-left: 20%;
-    margin-right: 20%;
-    border-style: solid;
-    border-color:black;;
-    border-radius: 5px;
-    padding: 5px;
-    width: 250px;
-    height: 250px;
-}
-
 .textb {
     padding: 5px;
     margin-bottom: 5px;
@@ -187,73 +354,9 @@ form{
     border-color:#FF552F;
     background-color: white;
     border-radius: 5px;
-    width: 500px;
+    width: 52%;
     margin-left: auto;
     margin-right: auto;
-}
-
-#divBody{
-    padding-top:60px;
-    padding-bottom: 60px;
-}
-
-
-
-header{
-    position: fixed;
-    height: 50px;
-    width: auto;
-    top:0;
-    left: 0;
-    margin: 5px;
-    box-shadow: -5px -5px 5px #474f87;
-}
-
-#title{
-    float: left;
-    padding-right: 10px;
-    box-shadow: 0px 0px 20px #8CCCCC;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #8CCCCC;
-    background-color: #8CCCCC;
-    border-radius: 10px;
-}
-
-footer{
-    
-    position: fixed;
-    bottom: 0px;
-    height: 50px;
-    width: auto;
-    display: block;
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-    box-shadow: 5px 5px 5px #474f87;
-}
-
-header, footer{
-    background-color: #8CCCCC;
-    color: white;
-    text-shadow: 1px 1px black;
-    left: 0;
-    right: 0;
-}
-
-nav ol, nav li{
-    list-style-type: none;
-    display: inline-block;
-}
-
-nav li{
-    padding-left: 20px;
-    padding-right: 20px;
-    border-right: 3px dotted white;
-}
-
-nav li:last-child{
-    border-right: 3px solid white;
 }
 
  .prpic {
@@ -266,12 +369,13 @@ nav li:last-child{
     border-color: #8CCCCC;
 }
 
-
 form p{
     text-align: left;
     width: 200px;
+    margin-left: 25px;
     
 }
+
 #profilo{
     text-align: left;
     padding-left: 15px;
@@ -280,12 +384,11 @@ form p{
     border-style: solid;
     border-radius: 5px;
     border-color: #8CCCCC;
-    width: 600px;
+    width: 53%;
     padding-top: 25px;
     height: auto;
     padding-bottom: 50px;
 }
-
 
 #profilo textArea:focus, #profilo input:focus{
     border-color: #8CCCCC;
@@ -295,10 +398,11 @@ form p{
     border-radius: 8px;
     
 }
+
 .profileBox{
     width: 200px;
-    padding:25px;
     margin:25px;
+    padding:10px;
     
 }
 
@@ -312,42 +416,20 @@ form p{
 
 
 
-aside{
-    position: fixed;
-    top:100px;
-    left: 0px;
-    padding: 5px;
-    width: 200px;
-    padding: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color:  #8CCCCC;
-    background-color: white;
-    height: auto;
-}
-
-
-#sommario ol{
-    list-style-type: upper-roman;
-    list-style-position: inside;
-    padding-left:0;
-}
-
-#sommario ul{
-    padding-left:6px;
-    text-justify: distribute;
-}
 
 @media only screen and (max-width: 1024px){
     
+    #divBody{
+        padding-top: 50px;
+    }
+    
     .post,.textb,.inpForm, #profilo{
         margin-right: 0px;
-        width: 70%;
+        width: 53%;
         margin-top: 50px;
         
     }
+    
     #profilo{
         width: 67%;
 }
@@ -355,12 +437,13 @@ aside{
     a:hover{
     color: #FF552F;
 }
+
     nav{
     position: fixed;
-    top:100px;
-    left: 0px;
+    bottom:10px;
+    left: 10px;
     padding: 5px;
-    width: 110px;
+    width: 150px;
     padding: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -370,9 +453,27 @@ aside{
     background-color: white;
     height: auto;
     }
+    
+    nav li{
+         border-bottom: 3px dotted #FF552F;  
+    }
+    
     #sommario{
         display: none;
     }
+    
+    #sidebar1 {
+        float: left;
+        width: 180px;
+        padding-left: 5px;
+        padding-top: 15px;
+
+    }
+    
+    #sidebar2{
+        display: none;
+    }
+    
     nav ol, nav li{
         margin: 0px;
         padding: 0px;
@@ -387,11 +488,23 @@ aside{
     margin: 5px;
     box-shadow: -5px -5px 5px #474f87;
 }
-#title h1{
+
+    #title h1{
     font-size: 25px;
 }
 
-#title{
+.postImg img{
+    margin-left: 5%;
+    margin-right: 0%;
+    border-style: solid;
+    border-color:black;;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+    #title{
     font-size:15px;
     width: 110px;
     padding-right: 10px;
@@ -403,10 +516,19 @@ aside{
     border-radius: 10px;
 }
 
-#intro{
+#navTitle{
+    display: list-item;
+    list-style: none;
+    border-bottom: 3px solid #8CCCCC;
+    margin-bottom: 10px;
+    
+}
+
+    #intro{
     background: none;
 }
-footer{
+
+    footer{
     display: none;
 }
 }
@@ -414,7 +536,7 @@ footer{
 @media only screen and (max-width:480px){
 
     
-    nav{
+nav{
         position: static;
         top: 52px;
         display:block;
@@ -424,8 +546,8 @@ footer{
         width:  100%;
         
     }
-
-    nav ol, nav li{
+    
+nav ol, nav li{
         text-align: center;
         width: 100%;
         background-color: #8CCCCC;
@@ -434,24 +556,37 @@ footer{
         padding: 0;
         margin: 0px;
     }
-    nav li{
+    
+nav li{
          border-bottom: 3px dotted #FF552F;  
     }
     
-    nav li:last-child{
+#sidebar2, #sidebar1,#navTitle{
+        display: none;
+    }
+    
+nav li:last-child{
     border-bottom: 3px solid black;
 }
-     .post,.textb,.inpForm, #profilo{
+
+.post,.textb,.inpForm, #profilo{
         margin-right: 1%;
         width: 99%;
         margin-top: 52px;
         border: none;  
+        border-bottom: 3px solid #FF552F;
+        padding-bottom: 15px; 
     }
-    body{
+    
+#loginPage{
+      padding-top:50px;
+    }
+    
+body{
         background: white;
     }
     
-    #header{
+#header{
         text-align: center;
     position: static;
     height: 50px;
@@ -476,6 +611,7 @@ footer{
     box-shadow: none;
     border-radius: 0px;
 }
+
 header{
     box-shadow: none;
     margin: 0;
