@@ -24,7 +24,6 @@ import javax.servlet.http.HttpSession;
  */
 
 @WebServlet(name = "Bacheca", urlPatterns = {"/Bacheca"})
-
 public class Bacheca extends HttpServlet {
 
     /**
@@ -43,13 +42,12 @@ public class Bacheca extends HttpServlet {
         
         HttpSession session = request.getSession(false);
         
-        //se la sessione esiste ed esiste anche l'attributo loggedIn impostato a true
+       
         if(session!=null && 
            session.getAttribute("loggedIn")!=null &&
            session.getAttribute("loggedIn").equals(true)){
             
-            //controllo se è impostato il parametro get "user" che mi consente
-            //di visualizzare una bacheca di uno specifico utente.
+           
             String utente = request.getParameter("utente");
             
             int userID;

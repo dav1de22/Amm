@@ -8,6 +8,9 @@
 <!DOCTYPE html>
 <footer>
             <div id ="footer">
-                <p>Nerdbook © 2017 All rights reserved. Sei Loggato come ${user.nome} ${user.cognome}</p>
+                <p>Nerdbook © 2017 All rights reserved. Sei Loggato come ${user.nome} ${user.cognome}<c:if test="${empty param.user}">
+                    <a href="Login?logout=1">Logout</a>
+                </c:if>
+            </p>
             </div>
         </footer>
