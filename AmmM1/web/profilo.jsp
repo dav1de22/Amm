@@ -1,3 +1,10 @@
+<%-- 
+    Document   : profilo
+    Created on : May 4, 2017, 8:03:46 PM
+    Author     : Davide
+--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!--
 Questa pagina contiene un profilo Nerdbook
@@ -13,56 +20,25 @@ Questa pagina contiene un profilo Nerdbook
         <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
     <body>
-        <header>
-            <div id="header">
-                <div id="title">
-                    <h1>Nerdbook </h1>
-                </div>
-                <nav>
-                    <h3 id="navTitle">SHORTCUTS</h3>
-                        <ol>
-                            <li><a href="descrizione.html">What's Nerdbook?</a></li>
-                            <li><a href="login.html">Effettua il login</a></li>
-                        </ol>
-                </nav>
-            </div>          
-        </header>
+        <c:set var="nav" value="descr&log" scope="request"/>
+        <jsp:include page="header.jsp"/>
+        
+        
         <div id="sidebar1">
-                <ul>
-                    <li >
-                        <h2>PERSONE</h2>
-                        <ul id="people">
-                            <li>Marco Fenice</li>
-                            <li>Massimo Dolore</li>
-                            <li>Nathan Drago</li>
-                        </ul>
-                    </li>
-                    <li id="groups">
-                        <h2>BUDDIES</h2>
-                        <ul>
-                            <li>Videogames</li>
-                            <li>Movies</li>
-
-                        </ul>
-                    </li>
-
-                </ul>
+            <c:set var="sidebar" value="users" scope="request"/>
+            <jsp:include page="sidebar.jsp"/>     
             </div>
 
             <div id="sidebar2">
-                <h2>Raccontaci di te</h2>
-                <p>
-                    Inserisci le informazioni per personalizzare il tuo profilo
-                </p>
-                <p>Scegli anche un password sicura. Noi di Nerdbook ci teniamo alla sicurezza del tuo profilo!</p>
-
+            <c:set var="sidebar" value="helpProfile" scope="request"/>
+            <jsp:include page="sidebar.jsp"/> 
             </div>
         <div id="divBody">
             
             <div id="profilo" class="inpForm">
                 <p id="intro">COMPILA IL TUO PROFILO!</p>
                 <form>
-                    <div>
+                    <div class='section'>
                     <p id='name'>Nome:</p>
                     <input class='profileBox' type="text" name="nome">
                     </div>
@@ -73,7 +49,7 @@ Questa pagina contiene un profilo Nerdbook
                     
                     <div class="section">
                     <p id='urlimm'>Carica la tua immagine profilo da URL:</p>
-                    <input class='profileBox' type="url" name="imgprofilo">
+                    <input class='profileBox' type="url" name="imgProfilo">
                     </div>
                     <div class="section">
                     <p id='dob'>Inserisci la tua data di nascita:</p>
@@ -84,23 +60,24 @@ Questa pagina contiene un profilo Nerdbook
                     <textarea class='profileBox' rows="4" cols="40" name="motto" id="motto">Inserisci il tuo grido di battaglia!</textarea>
                     </div>
                     <div class="section">
+                    <p id='name'>Username:</p>
+                    <input class='profileBox' type="text" name="username">
+                    </div>
+                    <div class="section">
                     <p id='password1box'>Scegliere una password:</p>
-                    <input class='profileBox' type="password" name="psw1" id='psw1'>
+                    <input class='profileBox' type="password" name="psw" id='psw'>
                     </div>
                     <div class="section">
                     <p id='password2box'>Ridigitare la password:</p>
                     <input class='profileBox' type="password" name="psw2">
                     </div>
-                    
+                    <button type="submit" id="button">Aggiorna profilo</button>
                     
                 </form>
             </div>
             
         </div>
-        <footer>   
-            <div id="footer">
-                <p>Nerdbook © 2017 All rights reserved.</p>
-            </div>
-        </footer>
+        
+            <jsp:include page="footer.jsp"/>
     </body>
 </html>
