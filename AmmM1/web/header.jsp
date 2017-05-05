@@ -12,7 +12,7 @@
                 <div id="title">
                     <h1>Nerdbook </h1>
                 </div>
-                <nav>
+                <nav>                  
                     <h3 id="navTitle">SHORTCUTS</h3>
                         <ol>
                             <c:if test="${nav=='descr&log'}">

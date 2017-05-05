@@ -8,6 +8,6 @@
 <!DOCTYPE html>
 <footer>
             <div id ="footer">
-                <p>Nerdbook © 2017 All rights reserved.</p>
+                <p>Nerdbook © 2017 All rights reserved. Sei Loggato come ${user.nome} ${user.cognome}</p>
             </div>
         </footer>

@@ -80,9 +80,9 @@ public class UserFactory {
         return null;
     }
     
-    public int getIdByUserAndPassword(String username, String psw){
+    public int getIdByUserAndPassword(String username, String password){
         for(User user : this.listaUser){
-            if(user.getUsername().equals(username) && user.getPsw().equals(psw)){
+            if(user.getUsername().equals(username) && user.getPsw().equals(password)){
                 return user.getId();
             }
         }

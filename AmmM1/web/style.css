@@ -196,7 +196,7 @@ footer{
     bottom: 0px;
     height: 50px;
     width: auto;
-    display: block;
+    display: relative;
     text-align: center;
     padding: 5px;
     margin: 5px;
