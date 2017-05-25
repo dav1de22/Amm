@@ -37,7 +37,7 @@ Questa pagina contiene il form per effettuare il login
             
             <div id="loginPage" class="inpForm">
              <h1>LOGIN</h1>
-                 <form method="post" id="login">
+             <form action="Login" method="post" id="login">
                     <div id='username'>
                         <h2>Inserisci l'username</h2>
                         <input id='usernameBox' type="text" name="username" placeholder="Username" required="required" />

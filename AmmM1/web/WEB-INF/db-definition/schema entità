@@ -1,0 +1,74 @@
+Entità user
+
+Attributi
+
+id
+Nome
+Cognome
+ImgProfilo
+Motto
+Username
+Psw
+Dob
+
+Entità post
+
+Attributi
+
+id
+Status
+Content
+PostType
+Author
+Group
+
+Entità typePost
+id
+descrizione
+
+
+Entità group
+
+Attributi
+
+id
+admin
+Title
+Info
+
+Entità relazione N:N Groups user :subs
+idGroup
+idUser
+
+User -> Post
+per ogni post può esistere un solo autore user
+
+Post -> User
+Per ogni utente possono esistere svariati post
+
+User -> Post 
+relazione  1:N
+
+User -> Group
+per ogni Gruppo possono esistere più utenti
+
+Group -> User
+Ogni utente può essere iscirtto a più gruppi
+
+User -> Group
+relazione N:N
+
+Post -> group
+Ogni gruppo può contere svariati post
+
+Group -> Post
+Ogni post può appartenere solo alla bacheca del gruppo in cui è stato postato
+
+Post -> Group
+relazione N:1 
+
+Post -> TypePost
+Ogni post può essere di un solo tipo
+
+TypePost -> Post
+Ci possono essere più post dello stesso tipo

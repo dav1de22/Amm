@@ -36,7 +36,7 @@ Questa pagina contiene la bacheca Nerdbook
             <jsp:include page="sidebar.jsp"/> 
             </div>
        <div id="divBody">
-           <%-- <c:forEach var="post" items="${post}"> --%>
+            <c:forEach var="post" items="${posts}"> 
                  <div id="posts">    
                 <div class="post">
                     <p class="pname"><strong>${user.nome} ${user.cognome}</strong></p>
@@ -50,9 +50,8 @@ Questa pagina contiene la bacheca Nerdbook
                             <img class= "postJpg" alt="Post con foto" src="${post.content}" width="240" height="281">
                             </div>
                         </c:if>
-                    
-                </div>         
-                <%--</c:forEach>--%>
+                </c:forEach>
+                </div>                        
                         
                     
                 <jsp:include page="footer.jsp"/>
