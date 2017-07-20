@@ -17,7 +17,7 @@ public class User {
     private String imgprofilo;
     private String dob;
     private String motto;
-    private String psw;
+    private String password;
     private String username;
     
 
@@ -27,7 +27,7 @@ public class User {
         cognome = "";
         imgprofilo="";
         motto = "";
-        psw = "";
+        password = "";
         dob="";
         username="";}
     /**
@@ -115,17 +115,17 @@ public class User {
     }
 
     /**
-     * @return the psw
+     * @return the password
      */
-    public String getPsw() {
-        return psw;
+    public String getPassword() {
+        return password;
     }
 
     /**
-     * @param psw the psw to set
+     * @param password the password to set
      */
-    public void setPsw(String psw) {
-        this.psw = psw;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     /**

@@ -26,6 +26,7 @@
                             <li><a href="descrizione.jsp">What's Nerdbook?</a></li>
                             <li><a href="profilo.jsp">Profilo</a></li>
                             <li><a href="bacheca.jsp">Bacheca</a></li>
+                            <li><a href="nerdfinder.jsp">Nerd Finder</a></li>
                             </c:if>
                         </ol>
                 </nav>

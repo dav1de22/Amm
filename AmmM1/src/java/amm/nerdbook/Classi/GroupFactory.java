@@ -40,12 +40,7 @@ public class GroupFactory {
      private GroupFactory(){
          
       UserFactory userFactory = UserFactory.getInstance();  
-         
-      Group group1 = new Group(); 
-      group1.setId(0);
-      group1.setAdmin(userFactory.getUserById(0));   
-      group1.setTitle("BOXARI");
-      group1.setInfo("Il primo gruppo per appassionati della console Di casa Microsoft su NerdBook!");
+     
      }
     public Group getGroupById(int id) {
         for (Group group : this.listaGroup) {

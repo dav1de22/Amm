@@ -41,33 +41,7 @@ public class PostFactory {
     
     UserFactory userFactory = UserFactory.getInstance(); 
     GroupFactory groupFactory = GroupFactory.getInstance();
-    
-    
-    //Creazione post
-        Post post1 = new Post();
-        post1.setStatus("Odio gli insetti! Mi fanno proprio schifo!");
-        post1.setId(0);
-        post1.setUser(userFactory.getUserById(0));
-        post1.setGroup(groupFactory.getGroupById(0));
-        
-        Post post2 = new Post();
-        post2.setStatus("Amo questo film e lo slow motion!");
-        post2.setContent("img/Neo.jpg");
-        post2.setPostType(Post.Type.IMAGE);
-        post2.setId(1);
-        post2.setUser(userFactory.getUserById(1));
-        
-        Post post3 = new Post();
-        post3.setStatus("Consiglio a tutti di leggere questo articolo! Che storia incredibile!");
-        post3.setContent("http://www.lercio.it/terrapiattista-precipita-dal-bordo-del-pianeta-ma-si-salva-afferrando-una-scia-chimica/");
-        post3.setId(2);
-        post3.setUser(userFactory.getUserById(2));
-        post3.setPostType(Post.Type.URL);
-        
-        listaPost.add(post1);
-        listaPost.add(post2);
-        listaPost.add(post3);
-        
+            
     }
     
         public Post getPostById(int id) {

@@ -76,7 +76,7 @@ public class UserFactory {
                 current.setMotto(res.getString("motto"));
                 current.setDob(res.getString("dob"));
                 current.setUsername(res.getString("username"));
-                current.setPsw(res.getString("password"));
+                current.setPassword(res.getString("password"));
                 
                 stmt.close();
                 conn.close();
@@ -101,8 +101,8 @@ public class UserFactory {
             Connection conn = DriverManager.getConnection(connectionString, "nerd", "nerd");
             
             String query = 
-                      "SELECT utente_id FROM utenti "
-                    + "WHERE nome = ? and password = ?";
+                      "select utente_id from utenti "
+                    + "where username = ? and password = ?";
             
             // Prepared Statement
             PreparedStatement stmt = conn.prepareStatement(query);
